@@ -2,6 +2,7 @@ package com.ll.exam.jump;
 
 import com.ll.exam.jump.question.Question;
 import com.ll.exam.jump.question.QuestionRepository;
+import com.ll.exam.jump.question.QuestionService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -16,6 +17,9 @@ class SbbApplicationTests {
 
 	@Autowired
 	private QuestionRepository questionRepository;
+
+	@Autowired
+	private QuestionService questionService;
 
 	@Test
 	void testJpa() {
@@ -39,5 +43,14 @@ class SbbApplicationTests {
 
 		Question q = all.get(0);
 		assertEquals("sbb가 무엇인가요?", q.getSubject());
+	}
+
+	@Test
+	void testJpa3() {
+		for (int i = 1; i <= 300; i++) {
+			String subject = String.format("테스트 데이터입니다:[%03d]", i);
+			String content = "내용무";
+			this.questionService.create(subject, content);
+		}
 	}
 }
