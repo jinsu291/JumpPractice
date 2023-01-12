@@ -1,6 +1,9 @@
-package com.ll.exam.jump.question;
+package com.ll.exam.jump.question.controller;
 
-import com.ll.exam.jump.answer.AnswerForm;
+import com.ll.exam.jump.answer.form.AnswerForm;
+import com.ll.exam.jump.question.form.QuestionForm;
+import com.ll.exam.jump.question.service.QuestionService;
+import com.ll.exam.jump.question.entity.Question;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Controller;
@@ -9,7 +12,6 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
-import java.util.List;
 
 @RequestMapping("/question")
 @RequiredArgsConstructor

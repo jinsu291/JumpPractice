@@ -1,4 +1,4 @@
-package com.ll.exam.jump.question;
+package com.ll.exam.jump.question.service;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -6,6 +6,8 @@ import java.util.List;
 import java.util.Optional;
 
 import com.ll.exam.jump.exception.DataNotFoundException;
+import com.ll.exam.jump.question.entity.Question;
+import com.ll.exam.jump.question.repository.QuestionRepository;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;

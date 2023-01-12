@@ -1,6 +1,6 @@
-package com.ll.exam.jump.answer;
+package com.ll.exam.jump.answer.entity;
 
-import com.ll.exam.jump.question.Question;
+import com.ll.exam.jump.question.entity.Question;
 import lombok.Getter;
 import lombok.Setter;
 

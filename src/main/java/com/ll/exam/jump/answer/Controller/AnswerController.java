@@ -1,7 +1,9 @@
-package com.ll.exam.jump.answer;
+package com.ll.exam.jump.answer.Controller;
 
-import com.ll.exam.jump.question.Question;
-import com.ll.exam.jump.question.QuestionService;
+import com.ll.exam.jump.answer.form.AnswerForm;
+import com.ll.exam.jump.answer.service.AnswerService;
+import com.ll.exam.jump.question.entity.Question;
+import com.ll.exam.jump.question.service.QuestionService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -9,7 +11,6 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.validation.Valid;
 

@@ -1,6 +1,8 @@
-package com.ll.exam.jump.answer;
+package com.ll.exam.jump.answer.service;
 
-import com.ll.exam.jump.question.Question;
+import com.ll.exam.jump.answer.entity.Answer;
+import com.ll.exam.jump.answer.repository.AnswerRepository;
+import com.ll.exam.jump.question.entity.Question;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

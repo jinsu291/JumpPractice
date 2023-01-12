@@ -1,4 +1,4 @@
-package com.ll.exam.jump.question;
+package com.ll.exam.jump.question.form;
 
 import lombok.Getter;
 import lombok.Setter;
