@@ -33,13 +33,13 @@ public class QuestionController {
 
     @GetMapping("/create")
     public String questionCreate(QuestionForm questionForm) {
-        return "question/form";
+        return "question/form.html";
     }
 
     @PostMapping("/create")
     public String questionCreate(@Valid QuestionForm questionForm, BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
-            return "question/form";
+            return "question/form.html";
         }
         this.questionService.create(questionForm.getSubject(), questionForm.getContent());
         return "redirect:/question/list";
